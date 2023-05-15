@@ -1,1 +1,1 @@
-apikey = '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'
+apikey = 'enter the key when want to use'
