@@ -17,12 +17,12 @@ prompt = st.text_input('Plug in your prompt here')
 #create prompt template
 abstract_template = PromptTemplate(
     input_variables = ['topic'],
-    template='write be a abstraction research paper abstract on {topic}'
+    template='write be a abstraction research paper abstract on {topic} and try not to hallucinate if you do not know the answer to the question asked by the user. Just ask for more context if that is the case.'
 )
 
 explanation_template = PromptTemplate(
     input_variables = ['abstract', 'wikipedia_research'],
-    template='write an detailed explanation with no less that a 1500 words that can be used to understand the topic and write research paper on the abstract abstract : {abstract}, while leveraging this wikipedia research:{wikipedia_research}'
+    template='write an detailed explanation with no less that a 1500 words that can be used to understand the topic and write research paper on the abstract abstract : {abstract}, while leveraging and understanding this wikipedia research:{wikipedia_research}'
 )
 
 
