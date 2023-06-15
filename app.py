@@ -22,7 +22,7 @@ abstract_template = PromptTemplate(
 
 explanation_template = PromptTemplate(
     input_variables = ['abstract', 'wikipedia_research'],
-    template='write an detailed explanation with no less that a 1500 words that can be used to understand the topic and write research paper on the abstract abstract : {abstract}, while leveraging and understanding this wikipedia research:{wikipedia_research}'
+    template='Provide a detailed explanation with no less that a 1500 words that can be used to understand the topic and write research paper on the abstract abstract : {abstract}, while leveraging and understanding this wikipedia research:{wikipedia_research}'
 )
 
 
